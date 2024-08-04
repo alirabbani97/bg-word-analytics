@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import Warning from "./Warning";
 
-export default function TextArea() {
-  const [text, setText] = useState("");
+export default function TextArea({ text, setText }) {
   const [errors, setErrors] = useState("");
 
   const handleChange = (e) => {
